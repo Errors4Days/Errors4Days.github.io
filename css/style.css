@@ -1,0 +1,236 @@
+/* Body */
+body{
+    font: 15px/1.5 Arial, Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.large-header{
+    font-size: 25px;
+}
+
+.bubble{
+    background-color: #DEF2F1;
+    border: #2B7A78 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+footer{
+    padding: 20px;
+    color: #17252A;
+    background-color: #3AAFA9;
+    text-align: center;
+}
+/* Global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height:38px;
+    background:#17252A;
+    border:0;
+    padding-left: 20px;
+    padding-right:20px;
+    color:#FEFFFF;
+}
+
+h2{
+    margin: 0px 0px;
+    text-align: center;
+}
+
+/* Header */
+header{
+    background: #3AAFA9;
+    color: #17252A;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:#17252A 5px solid;
+}
+
+header a{
+    color: #17252A;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 25px 0 25px;
+}
+
+header #logo{
+    float: left;
+}
+
+header #logo h1{
+    margin: 0;
+    font-size: 38px;
+}
+
+header nav{
+    float: right;
+    margin-top: 16px;
+}
+
+header .current a{
+    color: #FEFFFF;
+}
+
+header a:hover{
+    color: #FEFFFF;
+    font-weight: bold;
+}
+
+/* Showcase for homepage */
+#showcase{
+    min-height: 400px;
+    background: url('../images/landscape.jpg') no-repeat 0 0;
+    text-align: center;
+    color: #FEFFFF;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Newsletter */
+#newsletter{
+    padding: 15px;
+    color: #17252A;
+    background: #3AAFA9;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes on homepage*/
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+/* About */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+ul#about li{
+    list-style: none;
+    padding: 20px;
+    border: #2B7A78 solid 1px;
+    margin-bottom: 5px;
+    background: #DEF2F1;
+    border-radius: 20px;
+}
+
+ul#about img{
+    width: 90px;
+    float: left;
+    padding: 15px;
+}
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside h3{
+    margin: 0px;
+}
+
+.bubbleaside{
+    background-color: #DEF2F1;
+    border: #2B7A78 solid 1px;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+
+    float: center;
+}
+
+/* Video */
+.vidbox{
+    background-color: #3AAFA9;
+    border-radius: 20px;
+    margin: 50px auto;
+    max-width: 750px;
+    max-height: 550px;
+    padding: 10px;
+}
+
+.vidbox h1{
+    margin: 10px auto 0px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.vidbox iframe{
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    padding-top: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+/* Form */
+input{
+    width: 95%;
+}
+
+textarea{
+    resize: none;
+    width: 95%;
+    height: 150px;
+}
+
+.input2{
+    width: 25%;
+}

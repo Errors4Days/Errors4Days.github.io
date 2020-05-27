@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport:" content="width=device-width">
+        <meta name="description:" content="An experiment in web design">
+        <meta name="keywords" content="CWRU, student, computer science">
+        <meta name="author" content="Justin Lee">
+        <title>Justin's Website | Home</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+
+        <!--Header-->
+        <header>
+            <div class="container">
+                <div id="logo">
+                    <h1>Justin's Website</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="form.html">Form</a></li>
+                        <li><a href="video.html">Video</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--Image with overlapping text-->
+        <section id="showcase">
+            <div class="container">
+                <h1>A Website Design Demonstration</h1>
+                <p> I am computer science major at Case Western Reserve
+                    University. This is a demonstration of my coding and web
+                    design abilities.
+                </p>
+            </div>
+        </section>
+
+        <!--Form and submission-->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Email Submission Form</h1>
+                <form>
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="button_1" onclick="alert1()">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+        function alert1() {
+            window.alert("Hello! I am an alert box and this form doesn't do anything.");
+        }
+        </script>
+
+
+        <!--Boxes-->
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <img src="./images/logo_html.png">
+                    <h3>HTML5 Markup</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin a sem at urna malesuada pellentesque vitae
+                        lobortis elit. Nam vulputate massa quis rutrum
+                        efficitur. Morbi odio ante, faucibus sit amet ultrices
+                        eu, bibendum at risus. Donec in auctor quam. Cras
+                        fermentum pretium massa sed interdum.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./images/logo_css.png">
+                    <h3>CSS3 Markup</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin a sem at urna malesuada pellentesque vitae
+                        lobortis elit. Nam vulputate massa quis rutrum
+                        efficitur. Morbi odio ante, faucibus sit amet ultrices
+                        eu, bibendum at risus. Donec in auctor quam. Cras
+                        fermentum pretium massa sed interdum.
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="./images/logo_python.png">
+                    <h3>Python 3</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Proin a sem at urna malesuada pellentesque vitae
+                        lobortis elit. Nam vulputate massa quis rutrum
+                        efficitur. Morbi odio ante, faucibus sit amet ultrices
+                        eu, bibendum at risus. Donec in auctor quam. Cras
+                        fermentum pretium massa sed interdum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>A Student Project 2020</p>
+        </footer>
+    </body>
+</html>
