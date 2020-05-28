@@ -32,27 +32,15 @@
             <div class="container">
                 <form class="bubble" method="post" name="contact_form" action="emailform.php">
                     <h2>Auto Reply Form</h2>
-                    <div class="form">
-                        <label>Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="Name" size="40"><br>
-                    </div>
-                    <div class="form">
-                        <label>Email:</label><br>
-                        <input type="email" id="name" name="email" placeholder="Email" size="40"><br>
-                    </div>
-                    <div>
-                        <label>Purpose:</label><br>
-                        <textarea placeholder="Message" id="msg" name="message"></textarea>
-                    </div>
-                    <button type="submit" class="button_1">Submit</button>
-                </form>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" placeholder="Full Name" size="40"><br>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" placeholder="Email" size="40"><br>
+                    <label>Purpose:</label><br>
+                    <textarea name="message" placeholder="Message"></textarea>
 
-                <script type="text/javascript">
-                        var formvalidator = new Validator("contactform");
-                        formvalidator.addValidation("name", "req", "Please provide your name");
-                        formvalidator.addValidation("email", "req", "Please provide your email");
-                        formvalidator.addValidation("email", "email", "Please provide valid email address");
-                </script>
+                    <button type="submit" class="button_1" name="submit">Submit</button>
+                </form>
             </div>
         </section>
 
