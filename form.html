@@ -30,22 +30,29 @@
         <!--Form-->
         <section class="main">
             <div class="container">
-                <form class="bubble" target="form.html" method="post">
+                <form class="bubble" method="post" name="contact_form" action="emailform.php">
                     <h2>Auto Reply Form</h2>
                     <div class="form">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" placeholder="Name" size="40"><br>
+                        <label>Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Name" size="40"><br>
                     </div>
                     <div class="form">
-                        <label for="name">Email:</label><br>
-                        <input type="email" id="name" placeholder="Email" size="40"><br>
+                        <label>Email:</label><br>
+                        <input type="email" id="name" name="email" placeholder="Email" size="40"><br>
                     </div>
-                    <div class="form">
-                        <label for="msg">Purpose:</label><br>
-                        <textarea placeholder="Message" id="msg"></textarea>
+                    <div>
+                        <label>Purpose:</label><br>
+                        <textarea placeholder="Message" id="msg" name="message"></textarea>
                     </div>
                     <button type="submit" class="button_1">Submit</button>
                 </form>
+
+                <script type="text/javascript">
+                        var formvalidator = new Validator("contactform");
+                        formvalidator.addValidation("name", "req", "Please provide your name");
+                        formvalidator.addValidation("email", "req", "Please provide your email");
+                        formvalidator.addValidation("email", "email", "Please provide valid email address");
+                </script>
             </div>
         </section>
 
