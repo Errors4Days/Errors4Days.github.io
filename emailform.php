@@ -8,7 +8,8 @@
     $mailTo = "WodderGood4u@gmail.com";
     $headers = "From: ".$email;
     $txt = "You have received an email from ".$name.".\n\n".$message;
+    $subject = "subject"
 
-    mail($mailTo, $txt, $headers);
+    mail($mailTo, $subject, $txt, $headers);
     header("Location: index.php?mailsend");
 ?>
