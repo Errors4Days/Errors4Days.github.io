@@ -10,6 +10,6 @@
     $txt = "You have received an email from ".$name.".\n\n".$message;
     $subject = "subject"
 
-    mail($mailTo, $subject, $txt, $headers);
+    echo $text;
     header("Location: index.php?mailsend");
 ?>
