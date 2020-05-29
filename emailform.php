@@ -1,15 +1,17 @@
 <?php
-
-    if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+    
+    if(isset($_POST["submit"])){
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+        $subject = $_POST["subject"];
     }
-    $mailTo = "WodderGood4u@hotmail.com";
+    $mailTo = "woddergood4u@gmail.com";
     $headers = "From: ".$email;
     $txt = "You have received an email from ".$name.".\n\n".$message;
-    $subject = "subject"
+    mail($email, $subject, $message);
+    
 
-    echo $text;
-    header("Location: index.php?mailsend");
+    header("Location: form.html?mailsend");
+    
 ?>
