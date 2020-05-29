@@ -37,8 +37,11 @@
             $mail->Body = $body;
 
             $mail->send();
-            echo '<script>alert("Email sent successfully!")</script>'; 
-            header("Location: form.html?mailsend");
+            echo '<script type = "text/javascript">
+            alert("Email sent successfully!");
+            window.location = "form.html?mailsend";
+            </script>'; 
+            //header("Location: form.html?mailsend");
         } 
         catch (Exception $e){
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
