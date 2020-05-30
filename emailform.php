@@ -14,7 +14,8 @@
         $subject = clean_input($_POST["subject"]);
 
         $mail = new PHPMailer(true);
-        $body = "You have received an email from ".$name.".\n\n".$message;
+        $body = "You have received an email from " . $name . "<br> <br>" . $message;
+        $body .= "<br> <br>" . "Email: " . $email;
 
         try {
             //Server settings
@@ -54,9 +55,10 @@
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
-        return $data
+        return $data;
     }
-
+    //Checks that name and email are formated correctly
+    /*
     function name_check($name){
         if(!preg_match("/^[a-zA-Z ]*$/",$name)){
             return "Invalid name";
@@ -69,5 +71,5 @@
             return = "Invalid email format";
         }
         return $email;
-    }
+    }*/
 ?>
