@@ -59,8 +59,8 @@ header{
     min-height: 70px;
     border-bottom:#17252A 5px solid;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
 }
 
 header a{
@@ -109,6 +109,7 @@ header a:hover{
     background: url('../images/landscape.jpg') no-repeat 0 0;
     text-align: center;
     color: #FEFFFF;
+    margin-top: 100px;
 }
 
 #showcase h1{
