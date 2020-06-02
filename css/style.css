@@ -1,13 +1,9 @@
 /* Body */
 body{
-    font: 15px/1.5 Arial, Helvetica;
+    font: 16px/1.15 sans-serif;
     padding: 0;
     margin: 0;
     background-color: white;
-}
-
-.large-header{
-    font-size: 25px;
 }
 
 .bubble{
@@ -51,6 +47,10 @@ h2{
     text-align: center;
 }
 
+.spaced{
+    margin-top: 125px;
+}
+
 /* Header */
 header{
     background: #3AAFA9;
@@ -76,7 +76,7 @@ header a{
 header li{
     float: left;
     display: inline;
-    padding: 0 25px 0 25px;
+    padding: 0 20px 0 20px;
 }
 
 header #logo{
@@ -91,6 +91,7 @@ header #logo h1{
 header nav{
     float: right;
     margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 header .current a{
@@ -240,4 +241,20 @@ textarea{
 
 .input2{
     width: 25%;
+}
+
+/* Responsiviness */
+@media(max-width: 930px){
+    header #logo, header nav, header nav li,
+    #newsletter h1, #newsletter form,
+    #boxes .box,
+    article#main-col, aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .spaced{
+        margin-top: 150px;
+    }
 }
