@@ -161,6 +161,22 @@ header a:hover{
     width: 90px;
 }
 
+/* Weather */
+#boxes2 .container{
+    background-color: #DEF2F1;
+    border: #2B7A78 solid 1px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+#boxes2 .boxes{
+    float: left;
+    text-align: left;
+    display: inline-block;
+}
+
 /* About */
 article#main-col{
     float: left;
@@ -198,7 +214,6 @@ aside h3{
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 10px;
-
     float: center;
 }
 
