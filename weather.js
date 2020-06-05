@@ -13,7 +13,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var temp1Min = data.daily[0].temp.min;
         var icon1 = "./icons/" + data.daily[0].weather[0].icon + ".png";
         $("#day1").append(getDay(1000*data.daily[0].dt));
-        $(".icon1").attr("src", icon1);
+        $("#icon1").attr("src", icon1);
         $("#weather1").append(weather1);
         $("#temp1Max").append("High: ", temp1Max,"°F");
         $("#temp1Min").append("Low: ", temp1Min,"°F");
@@ -24,7 +24,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var temp2Min = data.daily[1].temp.min;
         var icon2 = "./icons/" + data.daily[1].weather[0].icon + ".png";
         $("#day2").append(getDay(1000*data.daily[1].dt));
-        $(".icon2").attr("src", icon2);
+        $("#icon2").attr("src", icon2);
         $("#weather2").append(weather2);
         $("#temp2Max").append("High: ", temp2Max,"°F");
         $("#temp2Min").append("Low: ", temp2Min,"°F");
@@ -35,7 +35,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var temp3Min = data.daily[2].temp.min;
         var icon3 = "./icons/" + data.daily[2].weather[0].icon + ".png";
         $("#day3").append(getDay(1000*data.daily[2].dt));
-        $(".icon3").attr("src", icon3);
+        $("#icon3").attr("src", icon3);
         $("#weather3").append(weather3);
         $("#temp3Max").append("High: ", temp3Max,"°F");
         $("#temp3Min").append("Low: ", temp3Min,"°F");
@@ -46,7 +46,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var temp4Min = data.daily[3].temp.min;
         var icon4 = "./icons/" + data.daily[3].weather[0].icon + ".png";
         $("#day4").append(getDay(1000*data.daily[3].dt));
-        $(".icon4").attr("src", icon4);
+        $("#icon4").attr("src", icon4);
         $("#weather4").append(weather4);
         $("#temp4Max").append("High: ", temp3Max,"°F");
         $("#temp4Min").append("Low: ", temp3Min,"°F");
@@ -58,7 +58,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var icon5 = "./icons/" + data.daily[4].weather[0].icon + ".png";
         $("#day5").append(getDay(1000*data.daily[4].dt));
         $("#weather5").append(weather5);
-        $(".icon5").attr("src", icon5);
+        $("#icon5").attr("src", icon5);
         $("#temp5Max").append("High: ", temp5Max,"°F");
         $("#temp5Min").append("Low: ", temp5Min,"°F");
 
@@ -69,7 +69,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var icon6 = "./icons/" + data.daily[5].weather[0].icon + ".png";
         $("#day6").append(getDay(1000*data.daily[5].dt));
         $("#weather6").append(weather6);
-        $(".icon6").attr("src", icon6);
+        $("#icon6").attr("src", icon6);
         $("#temp6Max").append("High: ", temp5Max,"°F");
         $("#temp6Min").append("Low: ", temp5Min,"°F");
 
@@ -80,7 +80,7 @@ $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.69
         var icon7 = "./icons/" + data.daily[6].weather[0].icon + ".png";
         $("#day7").append(getDay(1000*data.daily[6].dt));
         $("#weather7").append(weather7);
-        $(".icon7").attr("src", icon7);
+        $("#icon7").attr("src", icon7);
         $("#temp7Max").append("High: ", temp7Max,"°F");
         $("#temp7Min").append("Low: ", temp7Min,"°F");
     }

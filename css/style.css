@@ -167,14 +167,25 @@ header a:hover{
     border: #2B7A78 solid 1px;
     border-radius: 20px;
     padding: 10px;
-    width: 80%;
-    margin: 10px auto;
+    width: 94%;
+    margin: 10px auto 10px;
 }
 
-#boxes2 .boxes{
+#boxes2 .w{
+    display: inline;
     float: left;
-    text-align: left;
-    display: inline-block;
+    text-align: center;
+    width: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.w h1{
+    text-align: center;
+}
+
+.w img{
+    max-width: 100%;
 }
 
 /* About */
@@ -214,7 +225,6 @@ aside h3{
     border-radius: 20px;
     padding: 15px;
     margin-bottom: 10px;
-    float: center;
 }
 
 /* Video */
@@ -272,4 +282,17 @@ textarea{
     .spaced{
         margin-top: 150px;
     }
+
+    #boxes2 .w{
+        display: inline-block;
+        text-align: center;
+        width: 10%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .w img{
+        width: 100%;
+    }
+
 }
