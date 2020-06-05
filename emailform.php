@@ -23,14 +23,14 @@
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'woddergood4u@gmail.com';
+            $mail->Username = 'email@gmail.com';
             $mail->Password = 'password';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
             //Recipients
-            $mail->setFrom('woddergood4u@gmail.com', 'Mailer');
-            $mail->addAddress('woddergood4u@gmail.com');
+            $mail->setFrom('email@gmail.com', 'Mailer');
+            $mail->addAddress('email@gmail.com');
 
             // Content
             $mail->isHTML(true);
