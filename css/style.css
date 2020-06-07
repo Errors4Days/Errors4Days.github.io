@@ -21,6 +21,7 @@ footer{
     background-color: #3AAFA9;
     text-align: center;
 }
+
 /* Global */
 .container{
   width: 80%;
@@ -49,6 +50,22 @@ h2{
 
 .spaced{
     margin-top: 125px;
+}
+
+/* Animation */
+.animate{
+    animation: transitionIn 1.0s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10deg);
+    }
+    to {
+        opacity: 1;
+        transition: translateY(0);
+    }
 }
 
 /* Header */
