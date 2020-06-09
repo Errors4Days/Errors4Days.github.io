@@ -1,7 +1,7 @@
 /* Body */
-@import('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 body{
-    font: 16px/1.15 Raleway, sans-serif;
+    font: 16px/1.15 'Lato', sans-serif;
     padding: 0;
     margin: 0;
     background-color: white;
