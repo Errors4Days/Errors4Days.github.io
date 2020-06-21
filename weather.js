@@ -1,8 +1,4 @@
 //API key 5000a8ee699454c703b4d1ae743b12c4
-/*
-var icon = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-$(".icon").attr("src",icon);
-*/
 
 $.getJSON("http://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6944&units=imperial&exclude=minutely,hourly&appid=5000a8ee699454c703b4d1ae743b12c4",
     function(data){

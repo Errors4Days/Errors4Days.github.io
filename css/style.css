@@ -23,12 +23,6 @@ footer{
     text-align: center;
 }
 
-.slab{
-    padding: 20px;
-    color: #17252A;
-    background-color: #3AAFA9;
-}
-
 /* Global */
 .container{
   width: 80%;
@@ -126,6 +120,11 @@ header .current a{
 header a:hover{
     font-weight: bold;
     background-color: #DEF2F1;
+}
+
+header .current a:hover{
+    font-weight: bold;
+    background-color: #2B7A78;
 }
 
 /* Showcase for homepage */
@@ -251,14 +250,30 @@ aside h3{
 }
 
 /* Parallax */
+.slab{
+    padding: 30px;
+    color: #17252A;
+    background-color: #3AAFA9;
+}
+
 .parallax{
-    background: url('../images/landscape.jpg');
-    height: 100%;
-    min-height: 1000px;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+}
+.pA{
+    background: url('../images/landscape.jpg');
+    background-attachment: fixed;
     background-size: cover;
+    min-height: 600px;
+}
+
+.pB{
+    background: url('../images/casewestern.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 600px;
 }
 
 /* Form */
@@ -281,22 +296,9 @@ aside h3{
     width: 100%;
     height: 100%;
 }
-/*input{
-    width: 95%;
-}
-
-textarea{
-    resize: none;
-    width: 95%;
-    height: 150px;
-}
-
-.input2{
-    width: 25%;
-}*/
 
 /* Responsiviness */
-@media(max-width: 930px){
+@media(max-width: 900px){
     header #logo, header nav, header nav li,
     #newsletter h1, #newsletter form,
     #boxes .box,
@@ -307,7 +309,7 @@ textarea{
     }
 
     .spaced{
-        margin-top: 150px;
+        margin-top: 125px;
     }
 
     #boxes2 .w{
