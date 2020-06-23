@@ -211,8 +211,12 @@ header .current a:hover{
     max-width: 100%;
 }
 
-.w:hover{
-    
+.whoever{
+    display: none;
+}
+
+.w:hover .whoever{
+    display: block;
 }
 
 /* About */
