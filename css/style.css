@@ -211,6 +211,10 @@ header .current a:hover{
     max-width: 100%;
 }
 
+.w:hover{
+    background-color: black;
+}
+
 /* About */
 article#main-col{
     float: left;
