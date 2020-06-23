@@ -1,6 +1,6 @@
 //API key 5000a8ee699454c703b4d1ae743b12c4
-var lat = document.getElementById("demo").value;
-var lon = document.getElementById("demo").value;
+var lat = document.getElementById("lat").value;
+var lon = document.getElementById("lon").value;
 
 $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6944&units=imperial&exclude=minutely,hourly&appid=5000a8ee699454c703b4d1ae743b12c4",
     function(data){
