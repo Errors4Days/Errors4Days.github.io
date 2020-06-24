@@ -219,12 +219,12 @@ header .current a:hover{
     display: none;
 }
 
-.w:hover #o1, .w:hover #o2, .w:hover #o3, .w:hover #o4, .w:hover #o5
+.w:hover #o1, .w:hover #o2, .w:hover #o3, .w:hover #o4, .w:hover #o5,
 .w:hover #o6, .w:hover #o7{
     display: none;
 }
 
-.w:hover #i1, .w:hover #i2, .w:hover #i3,  .w:hover #i4, .w:hover #i5
+.w:hover #i1, .w:hover #i2, .w:hover #i3,  .w:hover #i4, .w:hover #i5,
 .w:hover #i6, .w:hover #i7{
     display: block
 }

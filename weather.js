@@ -102,6 +102,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#icon6").attr("src", icon6);
         $("#temp6Max").append("High: ", temp5Max,"°F");
         $("#temp6Min").append("Low: ", temp5Min,"°F");
+        
+        var descript6 = data.daily[5].weather[0].description;
+        $("#descript6").append(descript6);
+        var JSONfl6 = data.daily[5].feels_like;
+        for (x in JSONfl6){
+                $("#fl6").append(x, ": ", JSONfl6[x], "°F<br/>");
+        }
 
         //Day7
         var weather7 = data.daily[6].weather[0].main;
@@ -113,6 +120,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#icon7").attr("src", icon7);
         $("#temp7Max").append("High: ", temp7Max,"°F");
         $("#temp7Min").append("Low: ", temp7Min,"°F");
+        
+        var descript7 = data.daily[6].weather[0].description;
+        $("#descript7").append(descript6);
+        var JSONfl7 = data.daily[6].feels_like;
+        for (x in JSONfl7){
+                $("#fl7").append(x, ": ", JSONfl7[x], "°F<br/>");
+        }
     }
 );
 
