@@ -211,12 +211,22 @@ header .current a:hover{
     max-width: 100%;
 }
 
-.whoever{
+#o1, #o2, #o3, #o4, #o5, #o6, #o7{
+    display: block;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6, #i7{
     display: none;
 }
 
-.w:hover .whoever{
-    display: block;
+.w:hover #o1, .w:hover #o2, .w:hover #o3, .w:hover #o4, .w:hover #o5
+.w:hover #o6, .w:hover #o7{
+    display: none;
+}
+
+.w:hover #i1, .w:hover #i2, .w:hover #i3,  .w:hover #i4, .w:hover #i5
+.w:hover #i6, .w:hover #i7{
+    display: block
 }
 
 /* About */

@@ -12,6 +12,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#weather1").append(weather1);
         $("#temp1Max").append("High: ", temp1Max,"°F");
         $("#temp1Min").append("Low: ", temp1Min,"°F");
+        
+        var descript1 = data.daily[0].weather[0].description;
+        $("#descript1").append(descript1);
+        var JSONfl1 = data.daily[0].feels_like;
+        for (x in JSONfl1){
+                $("#fl1").append(x, ": ", JSONfl1[x], "°F<br/>");
+        }
 
         //Day2
         var weather2 = data.daily[1].weather[0].main;
@@ -23,6 +30,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#weather2").append(weather2);
         $("#temp2Max").append("High: ", temp2Max,"°F");
         $("#temp2Min").append("Low: ", temp2Min,"°F");
+        
+        var descript2 = data.daily[1].weather[0].description;
+        $("#descript2").append(descript2);
+        var JSONfl2 = data.daily[1].feels_like;
+        for (x in JSONfl2){
+                $("#fl2").append(x, ": ", JSONfl2[x], "°F<br/>");
+        }
 
         //Day3
         var weather3 = data.daily[2].weather[0].main;
@@ -34,6 +48,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#weather3").append(weather3);
         $("#temp3Max").append("High: ", temp3Max,"°F");
         $("#temp3Min").append("Low: ", temp3Min,"°F");
+        
+        var descript3 = data.daily[2].weather[0].description;
+        $("#descript3").append(descript3);
+        var JSONfl3 = data.daily[2].feels_like;
+        for (x in JSONfl3){
+                $("#fl3").append(x, ": ", JSONfl3[x], "°F<br/>");
+        }
 
         //Day4
         var weather4 = data.daily[3].weather[0].main;
@@ -45,6 +66,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#weather4").append(weather4);
         $("#temp4Max").append("High: ", temp3Max,"°F");
         $("#temp4Min").append("Low: ", temp3Min,"°F");
+        
+        var descript4 = data.daily[3].weather[0].description;
+        $("#descript4").append(descript4);
+        var JSONfl4 = data.daily[3].feels_like;
+        for (x in JSONfl4){
+                $("#fl4").append(x, ": ", JSONfl4[x], "°F<br/>");
+        }
 
         //Day5
         var weather5 = data.daily[4].weather[0].main;
@@ -56,6 +84,13 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#icon5").attr("src", icon5);
         $("#temp5Max").append("High: ", temp5Max,"°F");
         $("#temp5Min").append("Low: ", temp5Min,"°F");
+        
+        var descript5 = data.daily[4].weather[0].description;
+        $("#descript5").append(descript5);
+        var JSONfl5 = data.daily[4].feels_like;
+        for (x in JSONfl5){
+                $("#fl5").append(x, ": ", JSONfl5[x], "°F<br/>");
+        }
 
         //Day6
         var weather6 = data.daily[5].weather[0].main;
