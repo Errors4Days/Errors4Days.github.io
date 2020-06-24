@@ -122,7 +122,7 @@ $.getJSON("https://api.openweathermap.org/data/2.5/onecall?lat=41.4993&lon=-81.6
         $("#temp7Min").append("Low: ", temp7Min,"°F");
         
         var descript7 = data.daily[6].weather[0].description;
-        $("#descript7").append(descript6);
+        $("#descript7").append(descript7);
         var JSONfl7 = data.daily[6].feels_like;
         for (x in JSONfl7){
                 $("#fl7").append(x, ": ", JSONfl7[x], "°F<br/>");
